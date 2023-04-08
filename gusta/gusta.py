@@ -192,7 +192,7 @@ def gustaokno():
 
     window = tk.Tk()
     window.title(f"""{interface["title"]}""")
-    window.geometry("420x630")
+    window.geometry("420x680")
 
     top_bar = tk.Frame(master=window, pady=2, padx=5)
     top_bar.pack(fill="both")
