@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gusta"
+version = "0.0.1"
+description = "A GPT prompt processor. Simplifies GPT querying using templates. Scrapes article text, stores answers locally, calculates price in any currency."
+authors = ["Michal Kašpárek <michal.kasparek@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+openai = "^0.27.0"
+newspaper3k = "^0.2.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+exclude = ["user.config.json"]
