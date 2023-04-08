@@ -13,6 +13,8 @@ So, I created Gusta - the GPT prompt processor.
 - A URL can be easily scraped for an article's content with just a single click.
 - The price of the last job is shown in either dollars or your preferred currency.
 
+![A screenshot of Gusta](gusta_screenshot.png)
+
 ## Table of Contents
 
 1. [Installation](#installation)

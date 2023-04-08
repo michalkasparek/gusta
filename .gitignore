@@ -1,3 +1,4 @@
 config.user.json
 archive
 poetry.lock
+__pycache__
