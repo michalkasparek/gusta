@@ -9,11 +9,11 @@ Living with ADHD, I hate these things about ChatGPT:
 So, I created Gusta - the GPT prompt processor.
 
 - Gusta allows you to choose from prompt templates, both default and custom.
-- It saves the prompts and responses in JSON files (this feature can be turned off).
-- A URL can be easily scraped for an article's content with just a single click.
+- It saves the prompts and responses in JSON files. This feature can be turned off.
+- A text of an article can be scraped with a single click for further manipulation.
 - The price of the last job is shown in either dollars or your preferred currency.
 
-![A screenshot of Gusta](gusta_.png)
+![A screenshot of Gusta](gusta_screen.png)
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ So, I created Gusta - the GPT prompt processor.
    pip install -r requirements.txt
    ```
 
-4. Rename `config.user_sample.json` to `config.user.json`. Open it and save your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the "key" field, then save the file.
+4. Rename `config.user_sample.json` to `config.user.json`. Open it and save your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the `key` field, then save the file.
 
 ## Usage
 
@@ -60,7 +60,7 @@ After installing the dependencies and entering your API key into `config.user.js
 python gusta
 ```
 
-If you want to add your own templates, add them to the `config.user.json` file. Get inspiration from the sample templates included in the file.
+If you want to add your own templates, add them to the `template` section in the `config.user.json` file. Each template has three parts: the system prompt, the first part of the actual prompt and then the second part of the actual prompt. The user's input is automatically inserted between the first and the second part of the actual prompt. Get inspiration from the sample templates included in the file.
 
 ## Contributing
 
@@ -71,7 +71,7 @@ If you want to add your own templates, add them to the `config.user.json` file. 
    - The input is too long.
    - GPT servers are down.
    - Problems with internet connection.
-- Some parts of the interface disappear when the window is resized below 420 x 630 pixels.
+- Some parts of the interface disappear when the window is resized below certain size.
 
 ## License
 
