@@ -13,7 +13,7 @@ So, I created Gusta - the GPT prompt processor.
 - A URL can be easily scraped for an article's content with just a single click.
 - The price of the last job is shown in either dollars or your preferred currency.
 
-![A screenshot of Gusta](gusta_screenshot.png)
+![A screenshot of Gusta](gusta_.png)
 
 ## Table of Contents
 
@@ -35,13 +35,13 @@ So, I created Gusta - the GPT prompt processor.
 1. Clone the repository:
 
    ```
-   git clone https://github.com/michalkasparek/gusta/project.git
+   git clone https://github.com/michalkasparek/gusta.git
    ```
    
 2. Navigate to the project directory:
 
    ```
-   cd project
+   cd gusta
    ```
 
 3. Install the required packages:
@@ -52,11 +52,15 @@ So, I created Gusta - the GPT prompt processor.
 
 4. Rename `config.user_sample.json` to `config.user.json`. Open it and save your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the "key" field, then save the file.
 
-5. If you want to add your own templates, add them to the `config.user.json` file. Get inspiration from the sample templates included in the file.
-
 ## Usage
 
-__
+After installing the dependencies and entering your API key into `config.user.json`, run:
+
+```
+python gusta
+```
+
+If you want to add your own templates, add them to the `config.user.json` file. Get inspiration from the sample templates included in the file.
 
 ## Contributing
 
