@@ -50,7 +50,7 @@ So, I created Gusta - the GPT prompt processor.
    pip install -r requirements.txt
    ```
 
-4. Rename `config.user_sample.json` to `config.user.json`. Open it and save your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the `key` field, then save the file.
+4. Rename `config.user_sample.json` to `config.user.json`. Open it and paste your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the `key` field, then save the file.
 
 ## Usage
 
