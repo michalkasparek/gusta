@@ -153,7 +153,7 @@ def gustaokno():
             * float(engines[selected_engine][2] * float(rate))
         )
         window.title(
-            f"""{interface["title"]} ({int(reply.usage.prompt_tokens) + 
+            f"""{interface["title"]} ({int(reply.usage.prompt_tokens) +
             int(reply.usage.completion_tokens)} tokens, {'{0:.2f}'.format(money)} {currency})"""
         )
         if archive:
