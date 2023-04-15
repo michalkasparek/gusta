@@ -6,7 +6,7 @@ authors = ["Michal Kašpárek <michal.kasparek@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-gusta = "gusta:__main__"
+gusta = "gusta:__main__"  # hack: https://github.com/python-poetry/poetry/issues/5981#issuecomment-1190538445
 
 [tool.poetry.dependencies]
 python = "^3.7.1"
