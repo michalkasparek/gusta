@@ -24,45 +24,41 @@ So, I created Gusta - the GPT prompt processor.
 
 ## Installation
 
-### Prerequisites
+1. Run `pip install git+https://github.com/michalkasparek/gusta.git@master` to install the code and its dependencies.
 
-- Python
-- Newspaper3k
-- openai
+2. Rename `config.user_sample.json` to `config.user.json`. Open it and paste your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the `key` field, then save the file.
 
-### Installing
+## Usage
+
+After installing the dependencies and entering your API key into `config.user.json`, launch the app from your terminal:
+
+```
+gusta
+```
+
+If you want to add your own templates, add them to the `template` section in the `config.user.json` file. Each template has three parts: the system prompt, the first part of the actual prompt and then the second part of the actual prompt. The user's input is automatically inserted between the first and the second part of the actual prompt. Get inspiration from the sample templates included in the file.
+
+## Contributing
+
+To work on the project:
 
 1. Clone the repository:
 
    ```
    git clone https://github.com/michalkasparek/gusta.git
    ```
-   
+
 2. Navigate to the project directory:
 
    ```
    cd gusta
    ```
 
-3. Install the required packages:
+3. Use [Poetry](https://python-poetry.org/) to install the dependencies:
 
    ```
-   pip install -r requirements.txt
+   poetry install
    ```
-
-4. Rename `config.user_sample.json` to `config.user.json`. Open it and paste your API key ([https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)) in the `key` field, then save the file.
-
-## Usage
-
-After installing the dependencies and entering your API key into `config.user.json`, run:
-
-```
-python gusta
-```
-
-If you want to add your own templates, add them to the `template` section in the `config.user.json` file. Each template has three parts: the system prompt, the first part of the actual prompt and then the second part of the actual prompt. The user's input is automatically inserted between the first and the second part of the actual prompt. Get inspiration from the sample templates included in the file.
-
-## Contributing
 
 ### To-do
 
