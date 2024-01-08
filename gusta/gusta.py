@@ -5,6 +5,7 @@ import tkinter as tk
 import openai as ai
 from newspaper import Article
 
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def startup():
     def fill_templates(templates_dict):
